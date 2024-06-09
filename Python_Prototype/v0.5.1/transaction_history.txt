@@ -1,0 +1,5 @@
+Date: 08/05/2024 16:26:30, Payment: +$500.0, Balance Before: $0.0, Balance After: $500.0
+Date: 08/05/2024 16:26:36, Payment: +$5000.0, Balance Before: $500.0, Balance After: $5500.0
+Date: 08/05/2024 16:26:48, Expense Type: food, Expense Amount: $1000.0, Balance Before: $5500.0, Balance After: $4500.0
+Date: 08/05/2024 16:26:48, Expense Type: rent, Expense Amount: $1000.0, Balance Before: $4500.0, Balance After: $3500.0
+Date: 08/05/2024 16:27:22, Expense Type: food, Expense Amount: €20.0, Balance Before: €3500.0, Balance After: €3480.0

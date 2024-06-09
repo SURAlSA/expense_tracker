@@ -1,0 +1,5 @@
+Date: 04/05/2024 22:59:08, Payment: +722.8, Balance Before: 0.0, Balance After: 722.8
+Date: 04/05/2024 23:00:27, Expense Type: rent, Expense Amount: 500.0, Balance Before: 722.8, Balance After: 222.8
+Date: 04/05/2024 23:00:27, Expense Type: food, Expense Amount: 30.0, Balance Before: 222.8, Balance After: 192.8
+Date: 04/05/2024 23:00:27, Expense Type: groceries, Expense Amount: 120.0, Balance Before: 192.8, Balance After: 72.8
+Date: 04/05/2024 23:00:27, Expense Type: transport, Expense Amount: 30.0, Balance Before: 72.8, Balance After: 42.8

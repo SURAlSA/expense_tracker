@@ -1,0 +1,3 @@
+# need to add change currency functionality to the monthly transaction report file
+# and need to fully implement display monthly report function. 
+

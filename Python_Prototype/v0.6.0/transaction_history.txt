@@ -1,0 +1,19 @@
+Date: 25/05/2024 14:51:34, Expense Type: rent, Expense Amount: $500.0, Balance Before: $555.52, Balance After: $55.52
+Date: 25/05/2024 16:55:42, Expense Type: groceries, Expense Amount: $19.55, Balance Before: $55.52, Balance After: $35.97
+Date: 25/05/2024 16:55:42, Expense Type: groceries, Expense Amount: $5.75, Balance Before: $35.97, Balance After: $30.22
+Date: 25/05/2024 16:55:42, Expense Type: Energy Drinks, Expense Amount: $9.1, Balance Before: $30.22, Balance After: $21.12
+Date: 29/05/2024 17:49:19, Expense Type: alcohol, Expense Amount: $10.2, Balance Before: $21.12, Balance After: $10.92
+Date: 29/05/2024 17:49:19, Expense Type: gift, Expense Amount: $4.99, Balance Before: $10.92, Balance After: $5.93
+Date: 29/05/2024 17:49:19, Expense Type: coffee, Expense Amount: $5.04, Balance Before: $5.93, Balance After: $0.89
+Date: 29/05/2024 17:49:19, Expense Type: food, Expense Amount: $5.0, Balance Before: $0.89, Balance After: $-4.11
+Date: 29/05/2024 17:49:19, Expense Type: transport, Expense Amount: $5.0, Balance Before: $-4.11, Balance After: $-9.11
+Date: 29/05/2024 17:49:19, Expense Type: food, Expense Amount: $5.68, Balance Before: $-9.11, Balance After: $-14.79
+Date: 29/05/2024 17:49:34, Expense Type: transport, Expense Amount: $5.0, Balance Before: $-14.79, Balance After: $-19.79
+Date: 31/05/2024 18:24:13, Expense Type: food, Expense Amount: $5.08, Balance Before: $-19.79, Balance After: $-24.87
+Date: 31/05/2024 18:24:13, Expense Type: energy drinks, Expense Amount: $3.03, Balance Before: $-24.87, Balance After: $-27.9
+Date: 31/05/2024 18:24:13, Expense Type: food, Expense Amount: $5.0, Balance Before: $-27.9, Balance After: $-32.9
+Date: 31/05/2024 18:24:13, Expense Type: transport, Expense Amount: $5.0, Balance Before: $-32.9, Balance After: $-37.9
+Date: 02/06/2024 20:48:28, Expense Type: food, Expense Amount: $1.0, Balance Before: $-37.9, Balance After: $-38.9
+Date: 02/06/2024 20:48:28, Expense Type: food, Expense Amount: $3.3, Balance Before: $-38.9, Balance After: $-42.2
+Date: 02/06/2024 20:48:28, Expense Type: food, Expense Amount: $5.8, Balance Before: $-42.2, Balance After: $-48.0
+Date: 02/06/2024 21:00:02, Payment: +$500.0, Balance Before: $-48.0, Balance After: $452.0
