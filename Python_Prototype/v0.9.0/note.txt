@@ -1,0 +1,3 @@
+intend to add extra security features such that a password and username is required, but also having files stored in a not human readable format when the program is not running. 
+
+second feature would be the ability to print a pdf report showcasing information of every months financial data and the total data. users can specify whether they want a report for a specific month, year or lifetime report. transaction histories will be included depending on what a user specifies. 
