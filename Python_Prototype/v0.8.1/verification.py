@@ -2,7 +2,9 @@ import sys
 import string
 
 # Encoding and Decoding Dictionaries
+extra_chars = "€£¥₣₹₱₽"
 chars = string.printable
+chars = chars + extra_chars
 encoding = {char: f"{i:03}" for i, char in enumerate(chars)}
 decoding = {v: k for k, v in encoding.items()}
 
@@ -41,7 +43,8 @@ def verify():
         open(key, 'x')
         new_key = input(
             f"Key not Found, any Data has been Reset for Security purposes.\n"
-            f"Please Enter a New Key:\n"
+            f"Please Enter a New Key\n"
+            f"(Highly reccomend strong key contain symbols, capital and lowercase letters and numbers!)\n"
         )
         scrambled_new_key = encode_text(new_key, encoding)
         with open(key, "w") as file:

@@ -221,9 +221,9 @@ def income():
 
 def display_transaction_history():
     """Display the transaction history(file called '1185904')."""
-    with open("1185904", "r") as history_file:
+    with open("1185904", "r") as file:
         print("Transaction History:")
-        print(verification.decode_text(history_file.read(), verification.decoding))
+        print(str(verification.decode_text(file.read(), verification.decoding)))
 
 def change_currency():
     """Change the currency."""
@@ -250,19 +250,16 @@ def change_currency():
 
         for file_name in matching_files:
             file_path = os.path.join(directory, file_name)
-
-        with open(file_path, "r") as file:                    
-            month_record_files = verification.decode_text(file.read(), verification.decoding)
+            with open(file_path, "r") as file:                    
+                month_record_files = verification.decode_text(file.read(), verification.decoding)
 
         for old_currency in currencies:
             month_record_files = month_record_files.replace(old_currency, currency)
-        
-        for files in month_record_files:
             with open(file_path, 'w') as file:
-                files = file.write(month_record_files)
+                file.write(str(verification.encode_text(month_record_files, verification.encoding)))
             with open("1185904", "w") as file:
-                file.write(str(verification.encode_text(file_contents, verification.encoding)))
-        
+                file.write(str(verification.encode_text(file_contents, verification.encoding)))            
+                
         print(f"Currency now selected: {currency}")
     else:
         print("Invalid Currency!")
@@ -356,7 +353,6 @@ def forceful_reset():
 
     with open("1186593", "r") as file:
         currency = verification.decode_text(file.read(), verification.decoding)
-        currency = round(float(balance), 2)
 
     month_total = 0
     month_pay = 0
@@ -371,7 +367,7 @@ counter = 0
 
 # main function thats initialised upon activation. 
 def main():
-    global counter
+    global counter, currency, balance, month_pay, month_expense, month_total
     
     """Main menu for the application."""
     while True:
@@ -405,7 +401,27 @@ def main():
                 notbalance = balance + 500
                 print(f"Balance + 500: {notbalance}")
                 display_transaction_history()
-
+                print("Currency selected(from file):")
+                with open("1186593", "r") as file:
+                    currency = verification.decode_text(file.read(), verification.decoding)
+                print("Balance(from file): ")
+                with open("1128576", "r") as file:
+                    balance = verification.decode_text(file.read(), verification.decoding)
+                    balance = round(float(balance), 2)
+                    print(balance)
+                print("This Months income, total and expense(from file): ")
+                with open(current_month_expense, "r") as file:
+                    month_expense = verification.decode_text(file.read(), verification.decoding)
+                    month_expense = round(float(month_expense), 2)
+                with open(current_month_pay, "r") as file:
+                    month_pay = verification.decode_text(file.read(), verification.decoding)
+                    month_pay = round(float(month_pay), 2)
+                with open(current_month_total, "r") as file:
+                    month_total = verification.decode_text(file.read(), verification.decoding)
+                    month_total = round(float(month_total), 2)
+                print(f"this months income: {month_pay} |  this months expense: {month_expense} | this months difference: {month_total} |")
+                print("------------------------------------")
+                
             elif user_input == "5":
                 break
 
