@@ -1,0 +1,30 @@
+required features:
+- when entering key need to hide the key with '...' ensuring others cant view it as its typed (implemented)
+- add delays when using the application e.g. 'time.sleep(1)' (implemented)
+- make code more reusable when possible. some functions maybe too long. (somewhat implemented) 
+
+
+bugs:
+potential security risk allowing a user to access private data by creating a new login with empty files and then implanting those files into that save allowing access into them.  (not fixable atm)
+
+bug with the executable when changing currency: (fixed)
+
+1. Reset App Data:
+2. Change Currency(default: $):
+3. View lifetime transaction history:
+4. Print Monthly Report to PDF
+2
+Choose a currency to change to(€, £, ¥, ₣, ₹, $, ₱, ₽)(Current Currency selected: $): ₱
+Traceback (most recent call last):
+  File "main.py", line 513, in <module>
+    main()
+  File "main.py", line 480, in main
+    options()
+  File "main.py", line 280, in options
+    change_currency()
+  File "main.py", line 260, in change_currency
+    month_record_files = month_record_files.replace(old_currency, currency)
+UnboundLocalError: local variable 'month_record_files' referenced before assignment
+
+executable command used:
+pyinstaller main.py -F -n Expense_Tracker  --clean
